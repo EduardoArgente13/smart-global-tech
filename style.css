@@ -66,37 +66,6 @@ body::after {
   background: radial-gradient(circle at 70% 70%, rgba(11, 58, 104, 0.24), transparent 60%);
 }
 
-.mx-ambient {
-  position: fixed;
-  width: 520px;
-  height: 520px;
-  background:
-    radial-gradient(circle at 25% 30%, rgba(0, 140, 70, 0.16), transparent 66%),
-    radial-gradient(circle at 70% 65%, rgba(200, 30, 30, 0.16), transparent 60%),
-    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.26), transparent 55%);
-  filter: blur(36px);
-  opacity: 0.8;
-  mix-blend-mode: multiply;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.mx-ambient-top {
-  top: -120px;
-  left: -90px;
-}
-
-.mx-ambient-bottom {
-  bottom: -160px;
-  right: -140px;
-  transform: rotate(190deg);
-  opacity: 0.72;
-}
-
-.back-to-top {
-  display: none !important;
-}
-
 .container {
   max-width: 1180px;
   margin: 0 auto;
