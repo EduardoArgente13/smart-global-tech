@@ -1,4 +1,4 @@
-﻿// UI interactions and form submission
+// UI interactions and form submission
 
 document.addEventListener('DOMContentLoaded', () => {
   if (typeof translations !== 'undefined') {
@@ -61,11 +61,11 @@ function initDarkMode() {
 
   const applyTheme = (isDark) => {
     document.body.classList.toggle('dark-mode', isDark);
-    toggle.textContent = isDark ? '🌙' : '☀';
+    toggle.setAttribute('aria-pressed', isDark);
+    toggle.classList.toggle('dark-active', isDark);
   };
 
   const storedTheme = localStorage.getItem('theme');
-  // Default: claro; solo aplica dark si el usuario lo guardó
   applyTheme(storedTheme === 'dark');
 
   toggle.addEventListener('click', () => {
@@ -273,6 +273,7 @@ function initContactFormSubmission() {
       mensaje: formData.get('message'),
       company: formData.get('company'),
       phone: fullPhoneNumber,
+      toEmail: 'sistemas1@clbajio.com',
     };
 
     try {

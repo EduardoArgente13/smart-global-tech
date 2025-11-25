@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="frosted">
     <div class="container">
       <a href="#" class="logo" aria-label="Smart Global Tech Home">
         <img src="images/logo.png" alt="Logo de Smart Global Tech">
@@ -38,7 +38,10 @@
             <option value="es">Español</option>
           </select>
         </div>
-        <button id="toggle-dark" aria-label="Toggle dark mode">🌙</button>
+        <button id="toggle-dark" aria-label="Toggle dark mode" class="toggle-icon">
+          <span class="icon-moon">☾</span>
+          <span class="icon-sun">☀</span>
+        </button>
       </div>
     </div>
   </header>
@@ -46,9 +49,13 @@
   <main>
     <section id="hero" class="hero hero-background reveal">
       <div class="container">
+        <div class="hero-badge">People & Tech in Motion</div>
         <h1 data-key="hero_title">Empowering Your Workforce with Smart, Tech-Driven Solutions.</h1>
         <p data-key="hero_subtitle">We optimize your talent processes and operations with innovative technological solutions, crafted to take your company to the next level.</p>
-        <a href="#contact" class="cta" data-key="hero_cta">Get in Touch</a>
+        <div class="hero-actions">
+          <a href="#contact" class="cta" data-key="hero_cta">Get in Touch</a>
+          <a href="#services" class="ghost-link" data-key="hero_secondary_cta">Explore services</a>
+        </div>
       </div>
     </section>
 
@@ -206,18 +213,38 @@
         <h2 data-key="recruitment_title">International Recruitment</h2>
         <p class="section-subtitle" data-key="recruitment_p1">We specialize in finding the best talent for key industries:</p>
         <div class="team-grid">
-          <div class="team-card">
-            <img src="images/transport.svg" alt="Transport" onerror="this.src='https://via.placeholder.com/150?text=Transport'">
+          <div class="team-card recruitment-card">
+            <div class="icon-blob icon-transport" aria-hidden="true">
+              <svg viewBox="0 0 64 64" role="presentation">
+                <path d="M8 36h28l6-10h12l4 10v8H8z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                <circle cx="18" cy="46" r="6" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <circle cx="46" cy="46" r="6" fill="none" stroke="currentColor" stroke-width="2.5"/>
+              </svg>
+            </div>
             <h3 data-key="job_transport_title">Transport</h3>
             <p class="team-desc" data-key="job_transport_desc">Qualified drivers and logistics personnel.</p>
           </div>
-          <div class="team-card">
-            <img src="images/construction.svg" alt="Construction" onerror="this.src='https://via.placeholder.com/150?text=Construction'">
+          <div class="team-card recruitment-card">
+            <div class="icon-blob icon-construction" aria-hidden="true">
+              <svg viewBox="0 0 64 64" role="presentation">
+                <path d="M10 46l8-20h8l6 12 6-6 6 14z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M28 18l6-6 8 8-6 6z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
             <h3 data-key="job_construction_title">Construction</h3>
             <p class="team-desc" data-key="job_construction_desc">Skilled workers for all types of construction projects.</p>
           </div>
-          <div class="team-card">
-            <img src="images/production.svg" alt="Production" onerror="this.src='https://via.placeholder.com/150?text=Production'">
+          <div class="team-card recruitment-card">
+            <div class="icon-blob icon-production" aria-hidden="true">
+              <svg viewBox="0 0 64 64" role="presentation">
+                <rect x="10" y="28" width="14" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <rect x="28" y="20" width="14" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <rect x="46" y="12" width="8" height="34" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <circle cx="17" cy="48" r="3" fill="currentColor"/>
+                <circle cx="35" cy="48" r="3" fill="currentColor"/>
+                <circle cx="50" cy="48" r="3" fill="currentColor"/>
+              </svg>
+            </div>
             <h3 data-key="job_production_title">Production Operators</h3>
             <p class="team-desc" data-key="job_production_desc">Efficient staff for manufacturing and production lines.</p>
           </div>
@@ -357,6 +384,16 @@
             </address>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.204684534038!2d-100.44358598507315!3d20.62121698622144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35a5d3f277777%3A0x1d3d0f3d3d3d3d3d!2sPaseo%20de%20la%20Rep%C3%BAblica%2013020%2C%20Juriquilla%2C%2076226%20Santiago%20de%20Quer%C3%A9taro%2C%20Qro.!5e0!3m2!1sen!2smx!4v1669833719124!5m2!1sen!2smx" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+          <div class="location-card">
+            <h3 data-key="locations_canada_office">Canada Office</h3>
+            <address>
+              325 Front St W, Suite 400<br>
+              Toronto, Ontario, Canada<br>
+              <span data-key="locations_phone">Phone</span>: <a href="tel:+14376900102">+1 (437) 690 0102</a><br>
+              <span data-key="locations_email">Email</span>: <a href="mailto:contact@smartglobaltech.ca">contact@smartglobaltech.ca</a>
+            </address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.751458071096!2d-79.38875912383885!3d43.64400935242859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d9d7dc3e2d%3A0x1aabdf8e0eb4fcb2!2s325%20Front%20St%20W%2C%20Toronto%2C%20ON%20M5V%202Y1%2C%20Canada!5e0!3m2!1sen!2sca!4v1732596543001!5m2!1sen!2sca" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -387,6 +424,8 @@
                 <option value="Strategic Advisory" data-key="contact_form_service_strategic_advisory">Strategic Advisory</option>
                 <option value="Tech BPO" data-key="contact_form_service_tech_bpo">Tech BPO</option>
                 <option value="Skill-Up Academy" data-key="contact_form_service_skill_up_academy">Skill-Up Academy</option>
+                <option value="International Recruitment" data-key="contact_form_service_international_recruitment">International Recruitment</option>
+                <option value="Business Network / CLB" data-key="contact_form_service_business_network">Business Network / CLB</option>
               </select>
 
               <label for="message" data-key="contact_form_message">Message</label>
