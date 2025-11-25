@@ -307,7 +307,7 @@ body.dark-mode #language-selector {
   background:
     radial-gradient(120% 90% at 20% 20%, rgba(12, 134, 226, 0.2), transparent),
     radial-gradient(140% 110% at 80% 0%, rgba(11, 58, 104, 0.2), transparent),
-    url("images/global_giff.gif") center center/cover no-repeat;
+    url("images/fondo1.jpg") center center/cover no-repeat;
   color: #fff;
 }
 
@@ -317,6 +317,24 @@ body.dark-mode #language-selector {
   inset: 0;
   background: linear-gradient(135deg, rgba(8, 28, 56, 0.7), rgba(8, 38, 72, 0.62));
   z-index: 1;
+}
+
+.hero-background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 18px;
+  background: linear-gradient(
+    90deg,
+    rgba(4, 132, 70, 0.16),
+    rgba(255, 255, 255, 0.25),
+    rgba(200, 24, 24, 0.16)
+  );
+  filter: blur(0.4px);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero .container {
