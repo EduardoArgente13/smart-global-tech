@@ -68,29 +68,33 @@ body::after {
 
 .mx-ambient {
   position: fixed;
-  width: 360px;
-  height: 360px;
+  width: 520px;
+  height: 520px;
   background:
-    radial-gradient(circle at 25% 30%, rgba(0, 140, 70, 0.2), transparent 62%),
-    radial-gradient(circle at 70% 65%, rgba(200, 30, 30, 0.2), transparent 58%),
-    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.28), transparent 55%);
-  filter: blur(24px);
-  opacity: 0.75;
+    radial-gradient(circle at 25% 30%, rgba(0, 140, 70, 0.16), transparent 66%),
+    radial-gradient(circle at 70% 65%, rgba(200, 30, 30, 0.16), transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.26), transparent 55%);
+  filter: blur(36px);
+  opacity: 0.8;
   mix-blend-mode: multiply;
   z-index: 0;
   pointer-events: none;
 }
 
 .mx-ambient-top {
-  top: -40px;
-  left: -70px;
+  top: -120px;
+  left: -90px;
 }
 
 .mx-ambient-bottom {
-  bottom: -20px;
-  right: -60px;
-  transform: rotate(180deg);
-  opacity: 0.65;
+  bottom: -160px;
+  right: -140px;
+  transform: rotate(190deg);
+  opacity: 0.72;
+}
+
+.back-to-top {
+  display: none !important;
 }
 
 .container {
