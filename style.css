@@ -68,15 +68,17 @@ body::after {
 
 .mx-ambient {
   position: fixed;
-  inset: -30% -20% -10% -20%;
-  background: linear-gradient(135deg,
-      rgba(0, 140, 70, 0.14) 0%,
-      rgba(255, 255, 255, 0.06) 28%,
-      rgba(200, 30, 30, 0.14) 56%,
-      rgba(255, 255, 255, 0.05) 78%,
-      rgba(0, 140, 70, 0.12) 100%);
-  filter: blur(70px);
-  opacity: 0.5;
+  top: -40px;
+  left: -60px;
+  width: 320px;
+  height: 320px;
+  background:
+    radial-gradient(circle at 25% 30%, rgba(0, 140, 70, 0.22), transparent 62%),
+    radial-gradient(circle at 70% 65%, rgba(200, 30, 30, 0.22), transparent 58%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.32), transparent 55%);
+  filter: blur(24px);
+  opacity: 0.85;
+  mix-blend-mode: multiply;
   z-index: 0;
   pointer-events: none;
 }
