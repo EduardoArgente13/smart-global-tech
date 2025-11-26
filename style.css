@@ -536,7 +536,7 @@ body.dark-mode .about-gif img {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.9rem;
   margin-top: 3rem;
 }
@@ -575,6 +575,10 @@ body.dark-mode .team-card img {
   color: var(--color-secondary);
   margin-bottom: 0.25rem;
   font-size: 1.2rem;
+}
+
+#team .team-grid {
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
 }
 
 .team-card .team-title {
