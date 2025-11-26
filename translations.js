@@ -98,8 +98,8 @@ const translations = {
 
   team_title: { en: "Our Team", es: "Nuestro Equipo" },
   team_p1: { en: "Meet the dedicated professionals behind Smart Global Tech's success:", es: "Conoce a los profesionales detrás del éxito de Smart Global Tech:" },
-  team_member1_name: { en: "Antonio Garcia", es: "Antonio Garcia" },
-  team_member1_role: { en: "CEO", es: "CEO" },
+  team_member1_name: { en: "Paulina Cid", es: "Paulina Cid" },
+  team_member1_role: { en: "Sales Manager", es: "Gerente de Ventas" },
   team_member1_desc: { en: "Visionary leader with a passion for transforming the world of work through technology.", es: "Líder visionario apasionado por transformar el mundo laboral con tecnología." },
   team_member2_name: { en: "Luis Flores", es: "Luis Flores" },
   team_member2_role: { en: "Lead Developer", es: "Lead Developer" },
@@ -161,4 +161,27 @@ const translations = {
   contact_ai_desc: { en: "Our AI is available 24/7 to answer your questions. Look for the chat icon in the corner!", es: "Nuestra IA está disponible 24/7 para responder tus preguntas. Busca el ícono de chat." },
 
   footer_copyright: { en: "© 2025 Smart Global Tech. All rights reserved.", es: "© 2025 Smart Global Tech. Todos los derechos reservados." },
-};
+  };
+
+// Updated team translations
+Object.assign(translations, {
+  team_p1: { en: "Meet the dedicated professionals behind Smart Global Tech's success:", es: "Conoce a los profesionales detrás del éxito de Smart Global Tech:" },
+  team_member1_name: { en: "Paulina Cid", es: "Paulina Cid" },
+  team_member1_role: { en: "Sales Manager", es: "Gerente de Ventas" },
+  team_member1_desc: { en: "Commercial strategist focused on sustained growth and long-term relationships.", es: "Estratega comercial enfocada en crecimiento sostenido y relaciones de largo plazo." },
+  team_member2_name: { en: "Luis Jasso", es: "Luis Jasso" },
+  team_member2_role: { en: "Recruiter", es: "Reclutador" },
+  team_member2_desc: { en: "Talent hunter who keeps processes clear and on time to secure the best hires.", es: "Especialista en atraer talento adecuado con procesos claros y oportunos." },
+  team_member3_name: { en: "Juan Carlos Godinez", es: "Juan Carlos Godinez" },
+  team_member3_role: { en: "Mexico Operations Manager", es: "Gerente de área México" },
+  team_member3_desc: { en: "Coordinates strategy and execution in Mexico to deliver consistent results.", es: "Coordina la estrategia y ejecución en México para asegurar resultados consistentes." },
+  team_member4_name: { en: "Carlos Reyes", es: "Carlos Reyes" },
+  team_member4_role: { en: "Head of Recruitment", es: "Gerente de Reclutamiento" },
+  team_member4_desc: { en: "Leads recruitment teams with a client-first approach and measurable outcomes.", es: "Lidera equipos de atracción de talento con un enfoque centrado en el cliente." },
+  team_member5_name: { en: "Daniel Rosales", es: "Daniel Rosales" },
+  team_member5_role: { en: "Retention & Internships Manager", es: "Gerente de Estadías y Retención" },
+  team_member5_desc: { en: "Designs initiatives that strengthen retention and growth for every team member.", es: "Diseña iniciativas para permanencia y crecimiento del talento en la organización." },
+  team_member6_name: { en: "Edgar Aladino", es: "Edgar Aladino" },
+  team_member6_role: { en: "Corporate Counsel", es: "Abogado de la Empresa" },
+  team_member6_desc: { en: "Advises on legal and compliance matters to keep operations secure.", es: "Asesora en temas legales y de cumplimiento para operaciones seguras." },
+});
