@@ -818,6 +818,15 @@ body.dark-mode footer {
   transform: translateY(0);
 }
 
+/* Hide back-to-top button */
+.back-to-top,
+.back-to-top.show {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(14px);
